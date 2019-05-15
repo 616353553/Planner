@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TaskView" customModule="Planner" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="csP-1h-IKg" id="8ar-rf-kx0"/>
+                <outlet property="deadlineLabel" destination="9Bh-NJ-Unq" id="3du-en-kuO"/>
+                <outlet property="durationLabel" destination="hJq-rq-QvI" id="PKN-eX-9rt"/>
+                <outlet property="taskLabel" destination="QLR-2b-Zi0" id="ME0-5j-jzV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="csP-1h-IKg">
+            <rect key="frame" x="0.0" y="0.0" width="79" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task name name name name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLR-2b-Zi0">
+                    <rect key="frame" x="8" y="8" width="63" height="39.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="j9V-Ge-x79">
+                    <rect key="frame" x="8" y="55.5" width="63" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019-04-31 10:00:00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bh-NJ-Unq" userLabel="Deadline">
+                            <rect key="frame" x="0.0" y="0.0" width="63" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13 Hour 20 Min" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJq-rq-QvI">
+                            <rect key="frame" x="0.0" y="36" width="63" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2V9-Ma-Iac">
+                    <rect key="frame" x="0.0" y="0.0" width="79" height="138"/>
+                    <connections>
+                        <action selector="buttonIsPushed:" destination="-1" eventType="touchUpInside" id="ET4-i7-cgn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1.458361749e-05" green="0.4766390324" blue="0.99938422439999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QLR-2b-Zi0" firstAttribute="top" secondItem="csP-1h-IKg" secondAttribute="top" constant="8" id="0Qd-7v-HsU"/>
+                <constraint firstItem="QLR-2b-Zi0" firstAttribute="leading" secondItem="csP-1h-IKg" secondAttribute="leading" constant="8" id="977-fs-DZU"/>
+                <constraint firstItem="2V9-Ma-Iac" firstAttribute="leading" secondItem="Vdz-wn-2HP" secondAttribute="leading" id="HSg-uR-Ova"/>
+                <constraint firstAttribute="bottom" secondItem="2V9-Ma-Iac" secondAttribute="bottom" id="Wry-bL-tDS"/>
+                <constraint firstItem="j9V-Ge-x79" firstAttribute="leading" secondItem="Vdz-wn-2HP" secondAttribute="leading" constant="8" id="YmD-K4-08Q"/>
+                <constraint firstItem="2V9-Ma-Iac" firstAttribute="trailing" secondItem="Vdz-wn-2HP" secondAttribute="trailing" id="fyX-a0-K8Y"/>
+                <constraint firstAttribute="trailing" secondItem="QLR-2b-Zi0" secondAttribute="trailing" constant="8" id="gWR-4d-WiI"/>
+                <constraint firstItem="j9V-Ge-x79" firstAttribute="top" secondItem="QLR-2b-Zi0" secondAttribute="bottom" constant="8" id="mZI-s3-ApJ"/>
+                <constraint firstItem="Vdz-wn-2HP" firstAttribute="trailing" secondItem="j9V-Ge-x79" secondAttribute="trailing" constant="8" id="rda-eW-VOg"/>
+                <constraint firstItem="2V9-Ma-Iac" firstAttribute="top" secondItem="csP-1h-IKg" secondAttribute="top" id="wnz-Y2-F1L"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Vdz-wn-2HP"/>
+            <point key="canvasLocation" x="-303.62318840579712" y="-118.52678571428571"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KuM-K0-QAJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Log InVC-->
+        <scene sceneID="2cr-11-4IU">
+            <objects>
+                <viewController id="KuM-K0-QAJ" customClass="LogInVC" customModule="Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c49-39-ydC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="qht-ZN-ovj">
+                                <rect key="frame" x="147.5" y="80" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qht-ZN-ovj" secondAttribute="height" multiplier="1:1" id="4jq-fc-xS0"/>
+                                    <constraint firstAttribute="height" constant="80" id="WWg-9P-omd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We don't support email login at this time. Sorry for your inconvinience." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztF-LW-VrU">
+                                <rect key="frame" x="30" y="200" width="315" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ztF-LW-VrU" firstAttribute="leading" secondItem="cUd-e2-xvQ" secondAttribute="leading" constant="30" id="MzL-XR-Al8"/>
+                            <constraint firstItem="qht-ZN-ovj" firstAttribute="top" secondItem="cUd-e2-xvQ" secondAttribute="top" constant="60" id="U8M-gL-Khs"/>
+                            <constraint firstItem="qht-ZN-ovj" firstAttribute="centerX" secondItem="cUd-e2-xvQ" secondAttribute="centerX" id="ZRs-Ta-8V5"/>
+                            <constraint firstItem="ztF-LW-VrU" firstAttribute="top" secondItem="qht-ZN-ovj" secondAttribute="bottom" constant="40" id="lzC-R7-rGT"/>
+                            <constraint firstItem="ztF-LW-VrU" firstAttribute="centerX" secondItem="cUd-e2-xvQ" secondAttribute="centerX" id="nmi-8U-TXS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cUd-e2-xvQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z12-EP-l5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="113.79310344827587"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon" width="512" height="512"/>
+    </resources>
+</document>
